@@ -10,6 +10,7 @@ module.exports = {
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
+    __DEV__: 'readonly'
   },
   parser: 'babel-eslint',
   parserOptions: {
@@ -31,6 +32,10 @@ module.exports = {
         extensions : ['.jsx', '.js']
       }
     ],
-    'import/prefer-default-export' : 'off'
+    'import/prefer-default-export' : 'off',
+    'react/state-in-constructor' : 'off',
+    'react/static-property-placement' : 'off',
+    'react/state-in-constructor' : 'off',
+    'react/jsx-props-no-spreading' : 'off'
   },
 };
