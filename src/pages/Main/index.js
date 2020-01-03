@@ -8,5 +8,5 @@ export default function Main() {
 }
 
 Main.navigationOptions = {
-  title: 'Usuários'
+  title: 'Usuário'
 };
