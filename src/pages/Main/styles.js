@@ -32,3 +32,12 @@ export const SubmitButton = styled(RectButton)`
   margin-left: 10px;
   padding: 0 12px;
 `;
+
+export const List = styled.FlatList``;
+
+export const User = styled.View``;
+export const Avatar = styled.Image``;
+export const Name = styled.Text``;
+export const Bio = styled.Text``;
+export const ProfileButton = styled(RectButton)``;
+export const ProfileButtonText = styled.Text``;
