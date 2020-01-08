@@ -18,10 +18,10 @@ export const Input = styled.TextInput.attrs(props => ({
 }))`
   flex: 1;
   height: 40px;
-  background: ${props => (props.error ? '#fbacac' : '#eee')};
+  background: ${props => (props.error ? '#f9d5d5' : '#eee')};
   border-radius: 4px;
   padding: 0 15px;
-  border: 1px solid ${props => (props.error ? '#f14747' : '#eee')};
+  border: 1px solid ${props => (props.error ? '#ff9393' : '#eee')};
 `;
 
 export const SubmitButton = styled(RectButton)`
