@@ -21,38 +21,45 @@ export default class Main extends Component {
   state = {
     newUser: '',
     users: [],
-    loading: false
+    loading: false,
+    error: false
   };
 
   handleAddUser = async () => {
     const { newUser, users } = this.state;
 
-    this.setState({ loading: true });
+    this.setState({ loading: true, error: false });
 
-    const response = await api.get(`/users/${newUser}`);
+    try {
+      const response = await api.get(`/users/${newUser}`);
 
-    const data = {
-      name: response.data.name,
-      login: response.data.login,
-      bio: response.data.bio,
-      avatar: response.data.avatar_url
-    };
-    this.setState({
-      users: [...users, data],
-      newUser: '',
-      loading: false
-    });
+      const data = {
+        name: response.data.name,
+        login: response.data.login,
+        bio: response.data.bio,
+        avatar: response.data.avatar_url
+      };
+      this.setState({
+        users: [...users, data],
+        newUser: '',
+        loading: false,
+        error: false
+      });
 
-    Keyboard.dismiss();
+      Keyboard.dismiss();
+    } catch (err) {
+      this.setState({ error: true, loading: false });
+    }
   };
 
   render() {
-    const { users, newUser, loading } = this.state;
+    const { users, newUser, loading, error } = this.state;
 
     return (
       <Container>
         <Form>
           <Input
+            error={error}
             autoCorrect={false}
             autoCapitalize="none"
             placeholder="Adicionar usuário"

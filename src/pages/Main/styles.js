@@ -13,15 +13,15 @@ export const Form = styled.View`
   border-color: #eee;
 `;
 
-export const Input = styled.TextInput.attrs({
-  placeholderTextColor: '#999'
-})`
+export const Input = styled.TextInput.attrs(props => ({
+  placeholderTextColor: props.error ? '#797979' : '#999'
+}))`
   flex: 1;
   height: 40px;
-  background: #eee;
+  background: ${props => (props.error ? '#fbacac' : '#eee')};
   border-radius: 4px;
   padding: 0 15px;
-  border: 1px solid #eee;
+  border: 1px solid ${props => (props.error ? '#f14747' : '#eee')};
 `;
 
 export const SubmitButton = styled(RectButton)`
