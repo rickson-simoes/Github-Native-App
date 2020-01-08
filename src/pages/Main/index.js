@@ -66,7 +66,7 @@ export default class Main extends Component {
         <List
           data={users}
           keyExtractor={user => user.login}
-          renderItem={({ item }) => {
+          renderItem={({ item }) => (
             <User>
               <Avatar source={{ uri: item.avatar }} />
               <Name>{item.name}</Name>
@@ -75,8 +75,8 @@ export default class Main extends Component {
               <ProfileButton onPress={() => {}}>
                 <ProfileButtonText> Ver perfil </ProfileButtonText>
               </ProfileButton>
-            </User>;
-          }}
+            </User>
+          )}
         />
       </Container>
     );
