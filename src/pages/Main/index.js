@@ -25,6 +25,14 @@ export default class Main extends Component {
     error: false
   };
 
+  handleDeleteUser = () => {
+    const { users } = this.state;
+
+    this.setState({
+      users: users.filter(user => user !== users)
+    });
+  };
+
   handleAddUser = async () => {
     const { newUser, users } = this.state;
 
