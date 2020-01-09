@@ -43,6 +43,8 @@ export const List = styled.FlatList.attrs({
 export const User = styled.View`
   align-items: center;
   margin: 0 20px 30px;
+  background: #efefef;
+  padding: 20px;
 `;
 
 export const Avatar = styled.Image`
@@ -72,7 +74,6 @@ export const Bio = styled.Text.attrs({
 
 export const ButtonsMenu = styled.View`
   flex-direction: row;
-  justify-content: space-between;
 `;
 
 export const ProfileButton = styled(RectButton)`
@@ -83,6 +84,7 @@ export const ProfileButton = styled(RectButton)`
   justify-content: center;
   align-items: center;
   height: 36px;
+  padding: 10px 50px;
 `;
 
 export const ProfileButtonText = styled.Text`
@@ -94,10 +96,12 @@ export const ProfileButtonText = styled.Text`
 
 export const DeleteButton = styled.View`
   margin-top: 10px;
+  margin-left: 10px;
   align-self: stretch;
   border-radius: 4px;
   background: #ff9393;
   justify-content: center;
   align-items: center;
   height: 36px;
+  padding: 10px 20px;
 `;
