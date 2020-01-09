@@ -25,11 +25,11 @@ export default class Main extends Component {
     error: false
   };
 
-  handleDeleteUser = () => {
+  handleDeleteUser = user => {
     const { users } = this.state;
 
     this.setState({
-      users: users.filter(user => user !== users)
+      users: users.filter(u => u !== user)
     });
   };
 
@@ -97,6 +97,12 @@ export default class Main extends Component {
 
               <ProfileButton onPress={() => {}}>
                 <ProfileButtonText> Ver perfil </ProfileButtonText>
+              </ProfileButton>
+
+              <ProfileButton onPress={() => this.handleDeleteUser(item)}>
+                <ProfileButtonText>
+                  <Icon name="delete-forever" size={20} color="black" />
+                </ProfileButtonText>
               </ProfileButton>
             </User>
           )}
