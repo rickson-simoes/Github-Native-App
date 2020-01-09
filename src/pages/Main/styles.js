@@ -70,6 +70,11 @@ export const Bio = styled.Text.attrs({
   text-align: center;
 `;
 
+export const ButtonsMenu = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
 export const ProfileButton = styled(RectButton)`
   margin-top: 10px;
   align-self: stretch;
@@ -85,4 +90,14 @@ export const ProfileButtonText = styled.Text`
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
+`;
+
+export const DeleteButton = styled.View`
+  margin-top: 10px;
+  align-self: stretch;
+  border-radius: 4px;
+  background: #ff9393;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
 `;

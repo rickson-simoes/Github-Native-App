@@ -14,7 +14,9 @@ import {
   Name,
   Bio,
   ProfileButton,
-  ProfileButtonText
+  ProfileButtonText,
+  ButtonsMenu,
+  DeleteButton
 } from './styles';
 
 export default class Main extends Component {
@@ -95,15 +97,15 @@ export default class Main extends Component {
               <Name>{item.name}</Name>
               <Bio>{item.bio}</Bio>
 
-              <ProfileButton onPress={() => {}}>
-                <ProfileButtonText> Ver perfil </ProfileButtonText>
-              </ProfileButton>
+              <ButtonsMenu>
+                <ProfileButton onPress={() => {}}>
+                  <ProfileButtonText> Ver perfil </ProfileButtonText>
+                </ProfileButton>
 
-              <ProfileButton onPress={() => this.handleDeleteUser(item)}>
-                <ProfileButtonText>
-                  <Icon name="delete-forever" size={20} color="black" />
-                </ProfileButtonText>
-              </ProfileButton>
+                <DeleteButton onPress={() => this.handleDeleteUser(item)}>
+                  <Icon name="delete-forever" size={20} color="#FFF" />
+                </DeleteButton>
+              </ButtonsMenu>
             </User>
           )}
         />
