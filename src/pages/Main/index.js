@@ -44,14 +44,6 @@ export default class Main extends Component {
     }
   }
 
-  handleDeleteUser = user => {
-    const { users } = this.state;
-
-    this.setState({
-      users: users.filter(u => u !== user)
-    });
-  };
-
   handleAddUser = async () => {
     const { newUser, users } = this.state;
 
@@ -77,6 +69,20 @@ export default class Main extends Component {
     } catch (err) {
       this.setState({ error: true, loading: false });
     }
+  };
+
+  handleDeleteUser = user => {
+    const { users } = this.state;
+
+    this.setState({
+      users: users.filter(u => u !== user)
+    });
+  };
+
+  handleNavigate = user => {
+    const { navigation } = this.props;
+
+    navigation.navigate('User', { user });
   };
 
   render() {
@@ -115,7 +121,7 @@ export default class Main extends Component {
               <Bio>{item.bio}</Bio>
 
               <ButtonsMenu>
-                <ProfileButton onPress={() => {}}>
+                <ProfileButton onPress={() => this.handleNavigate(item)}>
                   <ProfileButtonText> Ver perfil </ProfileButtonText>
                 </ProfileButton>
 
