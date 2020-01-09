@@ -37,6 +37,7 @@ module.exports = {
     'react/static-property-placement' : 'off',
     'react/state-in-constructor' : 'off',
     'react/jsx-props-no-spreading' : 'off',
-    'no-console' : 'off'
+    'no-console' : 'off',
+    'react/sort-comp' : 'off'
   },
 };
