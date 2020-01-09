@@ -95,7 +95,7 @@ export const ProfileButtonText = styled.Text`
   text-transform: uppercase;
 `;
 
-export const DeleteButton = styled.View`
+export const DeleteButton = styled(RectButton)`
   margin-top: 10px;
   margin-left: 10px;
   align-self: stretch;
