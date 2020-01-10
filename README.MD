@@ -14,10 +14,10 @@ Para executar o ambiente
 <br />
 
 ### `Tela inicial`
-[![Exemplo1](https://raw.githubusercontent.com/rickson-simoes/react_native_F03/master/img_exemplos/exemplo1.png "Exemplo1")](https://raw.githubusercontent.com/rickson-simoes/react_native_F03/master/img_exemplos/exemplo1.png "Exemplo1")
+[![Exemplo1](https://raw.githubusercontent.com/rickson-simoes/react_native_F03/master/img_exemplos/exemplo1.JPEG "Exemplo1")](https://raw.githubusercontent.com/rickson-simoes/react_native_F03/master/img_exemplos/exemplo1.JPEG "Exemplo1")
 
 ### `Tela do usuario`
-[![Exemplo2](https://raw.githubusercontent.com/rickson-simoes/react_native_F03/master/img_exemplos/exemplo2.png "Exemplo2")](https://raw.githubusercontent.com/rickson-simoes/react_native_F03/master/img_exemplos/exemplo2.png "Exemplo2")
+[![Exemplo2](https://raw.githubusercontent.com/rickson-simoes/react_native_F03/master/img_exemplos/exemplo2.JPEG "Exemplo2")](https://raw.githubusercontent.com/rickson-simoes/react_native_F03/master/img_exemplos/exemplo2.JPEG "Exemplo2")
 
 ### `Erro ao inserir um usuario não existente`
-[![Exemplo4](https://raw.githubusercontent.com/rickson-simoes/react_native_F03/master/img_exemplos/exemplo3.png "Exemplo3")](https://raw.githubusercontent.com/rickson-simoes/react_native_F03/master/img_exemplos/exemplo3.png "Exemplo3")
+[![Exemplo4](https://raw.githubusercontent.com/rickson-simoes/react_native_F03/master/img_exemplos/exemplo3.JPEG "Exemplo3")](https://raw.githubusercontent.com/rickson-simoes/react_native_F03/master/img_exemplos/exemplo3.JPEG "Exemplo3")
