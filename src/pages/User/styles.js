@@ -81,5 +81,5 @@ export const Author = styled.Text`
 `;
 
 export const ActivityIndDiv = styled.View`
-  margin-top: 30px;
+  margin-top: 15px;
 `;
