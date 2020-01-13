@@ -12,6 +12,10 @@ export const Header = styled.View`
   border-color: #eee;
 `;
 
+export const BodyFlatList = styled.View`
+  height: 520px;
+`;
+
 export const Avatar = styled.Image`
   width: 100px;
   height: 100px;
@@ -74,4 +78,8 @@ export const Author = styled.Text`
   font-size: 13px;
   color: #666;
   margin-top: 2px;
+`;
+
+export const ActivityIndDiv = styled.View`
+  margin-top: 30px;
 `;
