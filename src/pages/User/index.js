@@ -33,7 +33,8 @@ export default class User extends Component {
   state = {
     stars: [],
     loading: false,
-    page: 1
+    page: 1,
+    refreshing: false
   };
 
   async componentDidMount() {
@@ -59,11 +60,16 @@ export default class User extends Component {
       this.setState({
         stars: [...stars, ...response.data],
         loading: false,
+        refreshing: false,
         page: page + 1
       });
     } catch (err) {
       console.tron.log(err);
     }
+  };
+
+  refreshList = () => {
+    this.setState({ refreshing: true, stars: [] }, this.loadMore);
   };
 
   renderFooter = () => {
@@ -78,7 +84,7 @@ export default class User extends Component {
 
   render() {
     const { navigation } = this.props;
-    const { stars } = this.state;
+    const { stars, refreshing } = this.state;
     const user = navigation.getParam('user');
 
     return (
@@ -92,6 +98,8 @@ export default class User extends Component {
         <BodyFlatList>
           <Stars
             data={stars}
+            onRefresh={this.refreshList}
+            refreshing={refreshing}
             keyExtractor={star => String(star.id)}
             renderItem={({ item }) => (
               <Starred>
